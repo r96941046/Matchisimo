@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019B16C21948A16200479E3C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 019B16C11948A16200479E3C /* Card.m */; };
 		B2FF538319484FF2006A5BF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FF538219484FF2006A5BF8 /* Foundation.framework */; };
 		B2FF538519484FF2006A5BF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FF538419484FF2006A5BF8 /* CoreGraphics.framework */; };
 		B2FF538719484FF2006A5BF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FF538619484FF2006A5BF8 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		019B16C01948A16200479E3C /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		019B16C11948A16200479E3C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		B2FF537F19484FF2006A5BF8 /* Matichisimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matichisimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FF538219484FF2006A5BF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B2FF538419484FF2006A5BF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		019B16C31948A16E00479E3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				019B16C01948A16200479E3C /* Card.h */,
+				019B16C11948A16200479E3C /* Card.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		B2FF537619484FF2006A5BF8 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 				B2FF539419484FF2006A5BF8 /* Main.storyboard */,
 				B2FF539719484FF2006A5BF8 /* CardGameViewController.h */,
 				B2FF539819484FF2006A5BF8 /* CardGameViewController.m */,
+				019B16C31948A16E00479E3C /* Model */,
 				B2FF539A19484FF2006A5BF8 /* Images.xcassets */,
 				B2FF538919484FF2006A5BF8 /* Supporting Files */,
 			);
@@ -253,6 +266,7 @@
 				B2FF539319484FF2006A5BF8 /* CardGameAppDelegate.m in Sources */,
 				B2FF539919484FF2006A5BF8 /* CardGameViewController.m in Sources */,
 				B2FF538F19484FF2006A5BF8 /* main.m in Sources */,
+				019B16C21948A16200479E3C /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +471,7 @@
 				B2FF53B319484FF2006A5BF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2FF53B419484FF2006A5BF8 /* Build configuration list for PBXNativeTarget "MatichisimoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +480,7 @@
 				B2FF53B619484FF2006A5BF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
