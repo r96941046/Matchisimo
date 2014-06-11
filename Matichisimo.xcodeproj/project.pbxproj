@@ -112,8 +112,6 @@
 		B2FF538819484FF2006A5BF8 /* Matichisimo */ = {
 			isa = PBXGroup;
 			children = (
-				B2FF539119484FF2006A5BF8 /* CardGameAppDelegate.h */,
-				B2FF539219484FF2006A5BF8 /* CardGameAppDelegate.m */,
 				B2FF539419484FF2006A5BF8 /* Main.storyboard */,
 				B2FF539719484FF2006A5BF8 /* CardGameViewController.h */,
 				B2FF539819484FF2006A5BF8 /* CardGameViewController.m */,
@@ -126,6 +124,8 @@
 		B2FF538919484FF2006A5BF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2FF539119484FF2006A5BF8 /* CardGameAppDelegate.h */,
+				B2FF539219484FF2006A5BF8 /* CardGameAppDelegate.m */,
 				B2FF538A19484FF2006A5BF8 /* Matichisimo-Info.plist */,
 				B2FF538B19484FF2006A5BF8 /* InfoPlist.strings */,
 				B2FF538E19484FF2006A5BF8 /* main.m */,
