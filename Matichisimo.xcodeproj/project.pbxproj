@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		019B16C21948A16200479E3C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 019B16C11948A16200479E3C /* Card.m */; };
 		019B16C61948ABAB00479E3C /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 019B16C51948ABAB00479E3C /* Deck.m */; };
+		019B16C91948B11D00479E3C /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 019B16C81948B11D00479E3C /* PlayingCard.m */; };
 		B2FF538319484FF2006A5BF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FF538219484FF2006A5BF8 /* Foundation.framework */; };
 		B2FF538519484FF2006A5BF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FF538419484FF2006A5BF8 /* CoreGraphics.framework */; };
 		B2FF538719484FF2006A5BF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FF538619484FF2006A5BF8 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 		019B16C11948A16200479E3C /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 		019B16C41948ABAB00479E3C /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
 		019B16C51948ABAB00479E3C /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
+		019B16C71948B11D00479E3C /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
+		019B16C81948B11D00479E3C /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 		B2FF537F19484FF2006A5BF8 /* Matichisimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matichisimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FF538219484FF2006A5BF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B2FF538419484FF2006A5BF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,6 +94,8 @@
 				019B16C01948A16200479E3C /* Card.h */,
 				019B16C41948ABAB00479E3C /* Deck.h */,
 				019B16C51948ABAB00479E3C /* Deck.m */,
+				019B16C71948B11D00479E3C /* PlayingCard.h */,
+				019B16C81948B11D00479E3C /* PlayingCard.m */,
 				019B16C11948A16200479E3C /* Card.m */,
 			);
 			name = Model;
@@ -268,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019B16C91948B11D00479E3C /* PlayingCard.m in Sources */,
 				019B16C61948ABAB00479E3C /* Deck.m in Sources */,
 				B2FF539319484FF2006A5BF8 /* CardGameAppDelegate.m in Sources */,
 				B2FF539919484FF2006A5BF8 /* CardGameViewController.m in Sources */,
