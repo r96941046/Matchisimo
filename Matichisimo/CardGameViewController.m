@@ -12,9 +12,23 @@
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
+@property (strong, nonatomic) Deck *deck;
 @end
 
 @implementation CardGameViewController
+
+- (Deck *)deck {
+    
+    if (!_deck) {
+        _deck = [self createDeck];
+    } return _deck;
+
+}
+
+- (Deck *)createDeck {
+    
+    return [[PlayingCardDeck alloc]init];
+}
 
 - (void)setFlipCount:(int)flipCount {
     _flipCount = flipCount;
@@ -25,18 +39,18 @@
 
 - (IBAction)touchCardButton:(UIButton *)sender {
     
-    PlayingCardDeck *playingCardDeck = [[PlayingCardDeck alloc]init];
-    NSString *randomCardContents = [playingCardDeck drawRandomCard].contents;
-    
-    
     if ([sender.currentTitle length]) {
         [sender setBackgroundImage:[UIImage imageNamed:@"cardBack"]
                           forState:UIControlStateNormal];
         [sender setTitle:@"" forState:UIControlStateNormal];   
     } else {
-        [sender setBackgroundImage:[UIImage imageNamed:@"cardFront"]
-                          forState:UIControlStateNormal];
-        [sender setTitle:randomCardContents forState:UIControlStateNormal];
+        Card *randomCard = [self.deck drawRandomCard];
+        if (randomCard) {
+            [sender setBackgroundImage:[UIImage imageNamed:@"cardFront"]
+                              forState:UIControlStateNormal];
+            [sender setTitle:randomCard.contents forState:UIControlStateNormal];
+        }
+      
     }
     self.flipCount++; // calls both getter and setter
 }
